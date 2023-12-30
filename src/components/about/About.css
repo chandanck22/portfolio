@@ -1,0 +1,230 @@
+@import url('../../index.css');
+@import url('../../variables.css');
+
+.about {
+    position: relative;
+}
+  
+.basicinfo {
+    display: flex;
+    width: 100%;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 6rem;
+    font-weight: 500;
+    gap: 4rem;
+    position: relative;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 30rem;
+    
+    h2 {
+      color: var(--text-color);
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+  
+      img {
+        width: 5rem;
+        margin-right: 1rem;
+      }
+    }
+    span {
+      color: var(--secondary-color);
+      font-size: 1.5rem;
+    }
+    p {
+      color: var(--text-color);
+
+    }
+}
+.aboutskill {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    color: var(--primary-color);
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0rem;
+      left: 0;
+      width: 50%;
+      background: var(--secondary-color);
+      height: 0.2rem;
+      border-radius: 1rem;
+    }
+}
+
+.desc {
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}  
+/* .imgbox {
+    width: 40%;
+    border: 0.6rem solid var(--main-color);
+    border-radius: 0.5rem;
+    background: var(--main-color);
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+} */
+.aboutimg{
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.eduinfo {
+    display: flex;
+    width: 100%;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 4rem;
+    position: relative;
+}
+.boxheading {
+    font-size: 2.5rem;
+    background: #613583;
+    background: linear-gradient(to bottom left, #613583 0%, #8e4dbf 100%);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+  
+    img {
+      width: 5rem;
+      margin-right: 1rem;
+    }
+  
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30%;
+      height: 0.3rem;
+      border-radius: 1rem;
+      /* background: $primary; */
+    }
+}
+
+.course {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  
+    .course__name {
+      color: var(--text-color);
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+}
+.roundbtn {
+    /* background: $background; */
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+  
+.courseinfo {
+    display: flex;
+    gap: 1rem;
+  
+    p {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+}
+.bx {
+    display: flex;
+    gap: 1rem;
+}
+.homebtn a{
+    display: inline-block;
+    padding: 13px 28px;
+    margin-top: 40px;
+    color: var(--text-color);
+    background: var(--main-color);
+    border-radius: 16px;
+    columns: var(--text-color);
+    font-size: 15px;
+    line-height: 1.3;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    transition: all .6s;
+}
+.btn{
+  margin: 5px;
+}
+.homebtn a:hover{
+    transform: translateY(-8px);
+    border: 1px solid var(--text-color);
+    background: transparent;
+  }
+
+
+
+
+@media screen and (max-width: 900px) {
+    .basicinfo {
+      flex-direction: column-reverse;
+      padding-top: 4rem;
+    }
+  
+    .eduinfo {
+      flex-direction: column;
+      padding-top: 4rem;
+    }
+  
+    .info {
+      max-width: 20rem;
+    }
+  
+    .imgbx {
+      width: 80%;
+    }
+  
+    .courseinfo {
+      flex-direction: column;
+    }
+}
+  
+@media screen and (max-width: 500px) {
+    .boxheading {
+      font-size: 1.5rem;
+  
+      img {
+        width: 3rem;
+      }
+    }
+  
+    .info,
+    .edubox {
+      padding: 1rem;
+      border-radius: 1rem;
+      /* box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff; */
+      margin: 1rem;
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+}
+  

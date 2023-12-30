@@ -1,0 +1,93 @@
+
+@import url('../../index.css');
+@import url('../../variables.css');
+
+nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 9%;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  
+  .navlinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .navlinks li a {
+    padding: 10px 22px;
+    margin-top: 40px;
+    color: var(--text-color);
+    background: var(--main-color);
+    border-radius: 16px;
+    columns: var(--text-color);
+    font-size: 15px;
+    /* line-height: 1.3; */
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    transition: all .6s;
+  }
+  .navlinks li a:hover, .navlinks li a:focus {
+    /* box-shadow: 25px 25px 30px var(--main-color), -5px -5px 10px #fff; */
+    border: 1px solid var(--text-color);
+    background: transparent;
+  }
+  
+   /* .btn {
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    color: #613583;
+    font-weight: 500;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+   */
+  .togglebtn {
+    background: var(--main-color);
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.5rem;
+    color: var(--text-color);
+    display: none;
+  } 
+  
+  @media screen and (max-width: 800px) {
+    .togglebtn {
+      display: flex;
+    }
+    .logo {
+      font-size: 1rem;
+    }
+    .togglebtn[aria-expanded=false] + .navlinks {
+      opacity: 0;
+      transform: translateX(-200vw);
+    }
+    .navlinks {
+      transform: translateX(0);
+      opacity: 1;
+      flex-direction: column;
+      position: absolute;
+      top: 5rem;
+      left: 1rem;
+      right: 1rem;
+      height: 80vh;
+      /* background: #e0e0e0; */
+      backdrop-filter: blur(20px);
+      box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      transition: all 0.6s ease-in-out;
+    }
+  }

@@ -1,0 +1,54 @@
+@import url('variables.css');
+
+:root {
+  background: linear-gradient(250.59deg, #322c38 0%, #514e61 28.53%, #1c2137 75.52%);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  /* background: #e0e0e0; */
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+html {
+  scroll-behavior: smooth;
+}

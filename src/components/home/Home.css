@@ -1,0 +1,144 @@
+@import url('../../index.css');
+@import url('../../variables.css');
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    /* background: ; */
+    /* box-shadow: inset 5px 5px 10px #b5b5b5, inset -5px -5px 10px #ffffff; */
+    margin: 2rem;
+}
+.homeinfo {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+  
+    h1 {
+        font-size: 3.5rem;
+        background: var(--main-color);
+        background: var(--primary-color);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+  
+    p {
+      color: var(--text-color);
+      font-weight: 500;
+      span {
+        color: var(--secondary-color);
+        margin: 0 0.5rem;
+      }
+    }
+}
+.homebtn a{
+    display: inline-block;
+    padding: 13px 28px;
+    margin-top: 40px;
+    color: var(--text-color);
+    background: var(--main-color);
+    border-radius: 16px;
+    columns: var(--text-color);
+    font-size: 15px;
+    line-height: 1.3;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    transition: all .6s;
+}
+.btn{
+  margin: 5px;
+}
+.homebtn a:hover{
+    transform: translateY(-8px);
+    border: 1px solid var(--text-color);
+    background: transparent;
+}
+.homeimg {
+    width: 40%;
+}
+
+/* SOCIAL ICONS */
+.social-icons{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.social-icons i{
+    display: block;
+    margin: 25px 0;
+    color: var(--text-color);
+    font-size: 25px;
+    transition: all .6s;
+}
+.social-icons i:hover{
+    transform: rotate3d(0, 0, 1, 360deg);
+}
+
+/* SCROLL BAR */
+.scroll-btn{
+    position: absolute;
+    bottom: 7%;
+    left: 9%;
+}
+.scroll-btn a{
+    font-size: 15px;
+    color: var(--text-color);
+}
+.scroll-btn i{
+    height: 45px;
+    width: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--text-color);
+    background: var(--main-color);
+    margin-left: 6px;
+    transition: all .6s;
+}
+.scroll-btn i:hover{
+    background: var(--text-color);
+    color: #101010;
+    transform: rotate3d(0, 0, 1, 360deg);
+}
+
+
+@media screen and (max-width:900px) {
+    .home {
+      flex-direction: column;
+      padding-top: 4rem;
+      margin: 1rem;
+    }
+    .homeinfo {
+      align-items: center;
+  
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .homeimg {
+      width: 70%;
+    }
+}
+  
+@media screen and (max-width:500px) {
+    .home {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+    }
+    .btn {
+      padding: 0.25rem 0.5rem;
+      /* margin: 0.1rem 0; */
+      font-size: 0.75rem;
+    }
+}
+  

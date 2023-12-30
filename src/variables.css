@@ -1,0 +1,8 @@
+:root{
+    --text-color: #fff;
+    --main-color:#514e61;
+    --h1-font: 5.5rem;
+    --p-font: 1rem;
+    --primary-color: linear-gradient(to bottom left, #613583 0%, #8e4dbf 100%);
+    --secondary-color: #17c000;
+}
