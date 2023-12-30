@@ -7,12 +7,12 @@ export const data = {
       bio: "I am a young, enthusiastic programmer who enjoys creating something that brings positive impact to the society. I am so fond of contributing my best to open source and also believe in the power of community.",
       education: [
         {
-          name: "Galgotias University",
+          name: "Galgotias University - MCA",
           location: "Greater Noida , Uttar Pradesh, India",
-          date: "Sep 2022",
+          date: "2022 - 2024",
         },
         {
-          name: "Chaudhary Charan Singh University",
+          name: "Chaudhary Charan Singh University - BCA",
           location: "Noida, Uttar Pradesh, India",
           date: "2018 - 2021",
         },
