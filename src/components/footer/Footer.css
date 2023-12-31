@@ -1,0 +1,46 @@
+@import url('../../index.css');
+@import url('../../variables.css');
+.footers {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    padding: 0;
+    min-height: 20vh;
+    backdrop-filter: blur(99px);
+    padding: 2rem;
+}
+.footers h2{
+    font-size: 2rem;
+    color: var(--text-color);
+
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+.social li a{
+    font-size: 20px;
+    color: var(--text-color);
+    transition: all .6s;
+}
+.social i {
+    height: 45px;
+    width: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--text-color);
+    background: var(--main-color);
+    margin-left: 6px;
+    transition: all .6s;
+}
+.social i:hover{
+    background: var(--text-color);
+    color: #101010;
+    transform: rotate3d(0, 0, 1, 360deg);
+}
