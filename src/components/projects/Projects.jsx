@@ -6,7 +6,7 @@ const Projects = () => {
     <>
         <section className='projects' id='projects'>
             <h2 className="boxheading">
-                Projects
+                Projects - Under Development
             </h2>
         </section>
     </>
